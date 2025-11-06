@@ -32,10 +32,17 @@ print("-------------------------------------------\n"
 # Are you a Baby Boomer? True
 #
 # Write your code below:
-
-
-
-
+print()
+birthyear = int(input("Please enter your year of birth: "))
+age = 2025 - birthyear
+if 1948 <= birthyear <= 1964:
+    print(f"Your age is {age}.")
+    print("Are you a Baby Boomer? True")
+    
+else:
+    print(f"You age is {age}.")
+    print("Are you a baby boomer? False")
+print()
 # Task 2: Price Calculator
 # -------------------------------------------
 print("-------------------------------------------\n"
@@ -56,10 +63,17 @@ print("-------------------------------------------\n"
 # Is expensive (over £25): True
 #
 # Write your code below:
-
-
-
-
+print()
+prices = [5.99, 12.50, 8.75]
+total = sum(prices)
+is_expensive = (round(total, 2))
+if total >= 25.00:
+    print(f"The total is £{round(total,2)}")
+    print("Is expensive (over £25): True")
+else:
+    print(f"The total is £{round(total, 2)}")
+    print("Is expensive (over £25): False")
+print()
 # Task 3: Username Checker
 # -------------------------------------------
 print("-------------------------------------------\n"
@@ -83,10 +97,14 @@ print("-------------------------------------------\n"
 # Contains letter 'a': True
 #
 # Write your code below:
-
-
-
-
+print()
+username = input("Please enter a username: ")
+is_long_enough = len (username) >= 5
+has_letter_a = "a" in username
+print(f"Username: {username}")
+print(f"Long enough (5+ chars): {is_long_enough}")
+print(f"Contains letter 'a': {has_letter_a}")
+print()
 # -------------------------------------------
 # Submitting Your Work
 # -------------------------------------------
